@@ -1,0 +1,13 @@
+﻿Class and Data Variables
+The class Coffeemaker is a simulation of a Mr. Coffee brand coffee machine. This class has settings including heat, water(cups), and bean type. The program can be run with default settings, or with manually entered settings. Coffeemaker has several built-in methods. These are what allow the user to input their own settings, grind their beans, and brew a tasty pot of coffee!
+The class level variable for this class is power and its default value is “off”. This switches to “on”, when the class is instantiated. Self.__water represents the number of cups of water. This is set by default to 2, and can be modified using the set_water method. Self.__heat represents the heat value, which has a default value of two and may be changed with the set_heat method. Self.__beans represents whether the beans are ground or not, and is set by default to “whole” and can be changed with the set_beans method.
+Methods
+get_water(): accesses the private data value for water and returns it.
+set_water(): allows user to change the value for water. Possible values include 1, 2, and 3.
+get_heat(): accesses and returns private data value for heat.
+set_heat(): allows user to change heat level. Possible values are 1, 2, or 3.
+grinder(): if beans are whole, the grinder is called. This prints several statements and changes the self.__beans variable to “ground”.
+brew(): Using the values of the self.__heat and self.__water variables this method outputs a series of characters which represent the cup of coffee. The level which the coffee reaches within the cup is based on the water value, and the number of steam wisps above the cup is determined by the heat value. Both of these values also determine the time the coffee will take to brew.
+Demo Program
+The demo program begins by welcoming you, then asking if you would like to view the current settings. If you answer yes, the program will use the above get methods to return the current settings of the coffeemaker. Then the program will ask if you want to change the settings. If you answer yes, the program will allow you to set the values for heat, water, and bean type. The heat and water values can only be 1, 2, or 3 and the bean value can only be “whole” or “ground”. If the beans value is set to “whole” the program will run the grinder method to convert the beans to “ground”. One this is done, the program will ask if you want to brew the coffee. If you answer yes, the brew method is called, and a cup of coffee will be output.
+This program will run when you run the script. The answers to each prompt must be “y” or “n” as opposed to “yes” or “no”.
